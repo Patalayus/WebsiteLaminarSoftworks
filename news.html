@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-wideth">
+    <meta name="description" content="Affordable and Professional Web Design">
+    <meta name="keywords" content="web design, affordable web design, Professional web design">
+    <meta name="author" content="Luke Charles">
+    <title>Laminar | News</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>Laminar<span class="highlight"> Softworks</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="current"><a href="news.html">News</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="login.html"><b>Sign In</b></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe to our Newsletter</h1>
+        <form>
+        <input type="email" placeholder="Enter Email...">
+        <button type="submit" class="button_1">Subscribe</button>
+      </form>
+      </div>
+    </section>
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">TOP HEADLINES IN TECH</h1>
+          <ul id="services">
+            <li>
+              <h3>Custom Copper IHS Tested on i7-8700k (Rockit Cool IHS Review)</h3>
+              <p>This chart is what we ultimately ended up with. At 5GHz and 1.42V, we end up generating between 200W and 220W at the EPS12V cables, depending on test. Give or take a couple watts for the two tested voltages here. Stock temperature monitoring showed 49.5 degrees Celsius over ambient for baseline, averaged after the 30-minute burn-in mark on our X62 (with max fan speeds). The peak 10-second high was 51.6C, with liquid temperature at 13.8C.
+
+              For the Rockit Cool IHS, we measured 44.5 degrees for the same test, or 48.2C across the peak high. Liquid was roughly equivalent and within margin of error. These differences are just barely outside of our error margins, and only exit margins because we ran the test 3 times on each IHS, with each one using a new liquid metal and paste application. This helps ensure we’re using the same application technique each time.
+
+            The result is a slight temperature improvement, roughly in the range of 3-5 degrees Celsius. Not bad for a copper brick.
+
+            At 1.44V and 5.1GHz, we saw nearly identical deltas: The stock IHS reported 56.8C, or 60C peak high. The Rockit Cool IHS resulted in a 5.18C AVG, or 56.5C 10-second high. The improvement, again, is in a range of about 3-5C, depending on error margins. Liquid temperatures are about the same.
+
+            As far as temperature over time, the IHS change doesn’t meaningfully impact or elongate that heating period in our test setup. The Rockit Cool kit is routinely below the stock IHS by a few degrees, but there is no real impact in ramp-up or ramp-down time; at least, not one that exits error margins.
+            </p>
+              <center><img src="./img/graph.png"></center>
+            </li>
+            <li>
+              <h3>AMD R3 2200G Delid & Liquid Metal Thermals</h3>
+              <p>This first chart just establishes our baselines with the stock IHS, before delidding took place. Using the Crosshair VI Hero with full auto settings and a Kraken X62, our baseline for Tdie is 39 degrees Celsius, delta T over ambient, with its 10-second high also at about 39 degrees. We operated at around 2.6C when idle. Manually configuring the CPU to run at 3.8GHz and 1.4V gave us a core temperature of 47 degrees over ambient, which was about 25 degrees during all tests, increasing our temperature over baseline by about 7 degrees. Idle is subsequently higher, running at about 4-4.7 degrees.
+
+              The air cooler ran at about 56-57 degrees over ambient – that’d put Tdie at about 81 degrees for the reported temperature, with the 3.8GHz and 1.4V configuration failing to complete the test. The CPU measured at 69 degrees before a thread failed, at which point we consider the test incomplete. We weren’t able to achieve stability with this high of a voltage, despite the frequency not really being overclocked in any meaningful way. Subsequently, we also disabled the cooling fan momentarily to determine TjMax, or the temperature at which thermal protections are enacted, which is about 95 degrees Celsius Tdie. If we add our ambient of about 25 degrees back to our Tdie of 69, we’re at 94C, which happens to align with TjMax.
+              </p>
+              <center><img src="./img/2200G.png"></center>
+            </li>
+            <li>
+              <h3>Invalid "4.6GHz" Overclocks on APUs: Entering Sleep (S3) Tricks Timer</h3>
+              <p>As we await arrival of our APUs today, we’ve seen a few news stories reporting “4.56GHz” overclocks (or similarly high clocks) on AMD’s new Ryzen+Vega amalgamation. Seemingly, this significantly higher overclock is achievable merely by entering S3 (sleep) in Windows, and is even easily validated with higher benchmark scores.
+                 In reality, we believe this is the Windows timer bugging out, which has existed on previous platforms and CPUs. The bug is easy to replicate because it only requires entering S3 state – another commonly problematic Windows setting, based on a previous life of lab testing – and waking from S3 causes artificially high clock reports.
+              </p>
+              <center><img src="./img/ryzen3.png"></center>
+            </li>
+          </ul>
+        </article>
+        <aside id="sidebar">
+          <div class="dark">
+          <h3>Join Laminar's Forum</h3>
+          <form class="quote_">
+          <div>
+            <label>Username</lable><br>
+            <input type="text" placeholder="Name">
+          </div>
+          <div>
+            <label>Email</label><br>
+            <input type="email" placeholder="Email Address">
+          </div>
+          <div>
+            <label>Password</label><br>
+            <textarea placeholder="Message"></textarea>
+          </div>
+          <center><button class="button_1" type="submit">MAKE ACCOUNT</button></center>
+        </form>
+      </div>
+      </aside>
+      </div>
+    </section>
+    <footer>
+      <p>Laminar Softworks, Copyright &copy; 2018 - All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

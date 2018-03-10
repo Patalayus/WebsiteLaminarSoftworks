@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-wideth">
     <meta name="description" content="Affordable and Professional Web Design">
@@ -53,7 +55,7 @@
 
             As far as temperature over time, the IHS change doesn’t meaningfully impact or elongate that heating period in our test setup. The Rockit Cool kit is routinely below the stock IHS by a few degrees, but there is no real impact in ramp-up or ramp-down time; at least, not one that exits error margins.
             </p>
-              <center><img src="./img/graph.png"></center>
+              <center><img src="./img/graph.png" width="480" height="270"></center>
             </li>
             <li>
               <h3>AMD R3 2200G Delid & Liquid Metal Thermals</h3>
@@ -61,7 +63,7 @@
 
               The air cooler ran at about 56-57 degrees over ambient – that’d put Tdie at about 81 degrees for the reported temperature, with the 3.8GHz and 1.4V configuration failing to complete the test. The CPU measured at 69 degrees before a thread failed, at which point we consider the test incomplete. We weren’t able to achieve stability with this high of a voltage, despite the frequency not really being overclocked in any meaningful way. Subsequently, we also disabled the cooling fan momentarily to determine TjMax, or the temperature at which thermal protections are enacted, which is about 95 degrees Celsius Tdie. If we add our ambient of about 25 degrees back to our Tdie of 69, we’re at 94C, which happens to align with TjMax.
               </p>
-              <center><img src="./img/2200G.png"></center>
+              <center><img src="./img/2200G.png" width="480" height="270"></center>
             </li>
             <li>
               <h3>Invalid "4.6GHz" Overclocks on APUs: Entering Sleep (S3) Tricks Timer</h3>
@@ -69,33 +71,28 @@
                  In reality, we believe this is the Windows timer bugging out, which has existed on previous platforms and CPUs. The bug is easy to replicate because it only requires entering S3 state – another commonly problematic Windows setting, based on a previous life of lab testing – and waking from S3 causes artificially high clock reports.
               </p>
               <center><img src="./img/ryzen3.png"></center>
-            </li>
-          </ul>
-        </article>
-        <aside id="sidebar">
-          <div class="dark">
-          <h3>Join Laminar's Forum</h3>
-          <form class="quote_">
-          <div>
-            <label>Username</lable><br>
-            <input type="text" placeholder="Name">
-          </div>
-          <div>
-            <label>Email</label><br>
-            <input type="email" placeholder="Email Address">
-          </div>
-          <div>
-            <label>Password</label><br>
-            <textarea placeholder="Message"></textarea>
-          </div>
-          <center><button class="button_1" type="submit">MAKE ACCOUNT</button></center>
-        </form>
-      </div>
-      </aside>
-      </div>
-    </section>
-    <footer>
-      <p>Laminar Softworks, Copyright &copy; 2018 - All Rights Reserved</p>
-    </footer>
-  </body>
-</html>
+              <center><iframe width="480" height="270" src="https://www.youtube.com/embed/4s13TqXdHiY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+            </body>
+          </article>
+          <aside id="sidebar">
+            <div class="dark">
+            <h3>Join Laminar's Forum</h3>
+            <form class="quote_">
+            <div>
+              <label>Username</lable><br>
+              <input type="text" placeholder="Name">
+            </div>
+            <div>
+              <label>Email</label><br>
+              <input type="email" placeholder="Email Address">
+            </div>
+            <div>
+              <label>Password</label><br>
+              <input id="userPassword" type="password" placeholder="Password">
+            </div>
+            <label>Tip: Never share your password with anyone</label><br>
+            <center><button class="button_1" type="submit">MAKE ACCOUNT</button></center>
+          </form>
+        </div>
+        </aside>
+              </html>
